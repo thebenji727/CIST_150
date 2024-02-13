@@ -55,7 +55,6 @@ elif user_rps == 'scissors':
         result = "You win!"
 print(f"You picked {user_rps}, and the computer picked {cpu_rps}. {result}")
 
-"""
 # 3)
 year_inp = int(input("Please input a year to see if its a leap year: "))
 leap_inp = year_inp%4 # % is a modulus operator
@@ -71,5 +70,27 @@ else:
     result = "That's not a leap year"
 print(result)
 
+"""
 #4)
 
+print("Welcome to Treasure Island! Your mission is to find the treasure!")
+choice_inp = input("Choose, left or right? ")
+if choice_inp.lower() == "left":
+    print("You pass!")
+    choice_inp_2 = input("You come across a raging river do you swim or wait? ")
+    if choice_inp_2.lower() == 'wait':
+        print("You pass!")
+        choice_inp_3 = input("You come across three doors: Red, Yellow, and Blue. Which one do you pick? ")
+        if choice_inp_3.lower() == "yellow":
+            print("You found the treasure! Congrats!")
+        elif choice_inp_3 == "red":
+            print("You got torched, Game Over...")
+        else:
+            print("You got eaten by beasts. Game Over...")
+    else:
+        print("While swimming you got attacked by a shark! Game over...")
+else:
+    print("You fell in a hole. Game Over...")
+
+
+print("Thanks for playing!~")
