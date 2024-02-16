@@ -16,7 +16,7 @@ else:
         if isPrime is True:
             list_prime.append(num)
 print(list_prime)
-'''
+
 
 ##2)
 list_even = []
@@ -26,3 +26,30 @@ for num in range(1, even_inp+1):
         list_even.append(num)
 print(list_even)
 
+
+
+
+##3)
+list = input("Enter numbers to be put in the list: ").split()
+list2 = []
+print("List: ", list)
+ind_num = int(len(list))
+for i in range(1,ind_num):
+    if i % 2 == 1:
+        num_i = int(i)
+        odd_list = list[num_i]
+        list2.append(odd_list)
+
+print("List of numbers with odd indexes:", list2)
+'''
+
+##4)
+list = input("Enter numbers to be put in the list: ").split()
+int_list = 0
+ind_num = int(len(list))
+for num in range(1,ind_num):
+    num_1 = int(num)
+    num_2 = int(list[num_1])
+    if num_2 > int_list:
+        int_list = num_2
+print("The largest number in the list is: ", int_list)
