@@ -22,7 +22,7 @@ def is_anagram(str1, str2): #defining the function, and the two strings that are
         print ('Not Anagrams')
 
 is_anagram('hello', 'leloh') #performs function
-'''
+
 
 #3)
 
@@ -46,3 +46,16 @@ def user_info (str1, num1, num2, num3):
         print(f"Hello {name}! You are {age} years old and you can purchase {num_products_round} products.")
 
 user_info(45, 1997, 300, 23)
+
+'''
+
+#4)
+def Triangle_Proof(side1, side2, side3):
+    triangleproof = ''
+    if side1 ** 2 + side2 ** 2 == side3 ** 2:
+        triangleproof = "Yes"
+    else:
+        triangleproof = "No"
+    print(triangleproof)
+
+Triangle_Proof(30,20,24)
