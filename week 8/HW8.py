@@ -52,10 +52,15 @@ user_info(45, 1997, 300, 23)
 #4)
 def Triangle_Proof(side1, side2, side3):
     triangleproof = ''
-    if side1 ** 2 + side2 ** 2 == side3 ** 2:
-        triangleproof = "Yes"
+    list_tri = []
+    list_tri.append(side1)
+    list_tri.append(side2)
+    list_tri.append(side3)
+    list_tri.sort()
+    if list_tri[2] > list_tri[0] + list_tri[1]:
+        triangleproof = "No can't make triangle"
     else:
-        triangleproof = "No"
+        triangleproof = "Yes can make triangle"
     print(triangleproof)
 
-Triangle_Proof(30,20,24)
+Triangle_Proof(3,3,3)
