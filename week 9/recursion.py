@@ -50,3 +50,27 @@ def factorialnum(n):
 fact_val = factorialnum(5)
 print(fact_val)
 '''
+import statistics
+
+def quicksort(num_list):
+    if len(num_list) <= 1:
+        return num_list
+    else:
+        #find median
+        median_val = statistics.median([num_list[0], num_list[len(num_list)//2], num_list[-1]])
+        list1 = []
+        list2 = []
+        list3 = []
+        for i in num_list:
+            if i < median_val:
+                list1.append(i)
+            elif i > median_val:
+                list3.append(i)
+            else:
+                list2.append(i)
+        return(quicksort(list1) + list2 + quicksort(list3))
+
+
+sort_list = quicksort([31, 18, 72, 79, 3, 18, 92, 11, 44, 56, 41, 28])
+print(sort_list)
+
