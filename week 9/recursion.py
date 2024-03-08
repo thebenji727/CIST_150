@@ -49,7 +49,7 @@ def factorialnum(n):
 
 fact_val = factorialnum(5)
 print(fact_val)
-'''
+
 import statistics
 
 def quicksort(num_list):
@@ -73,4 +73,20 @@ def quicksort(num_list):
 
 sort_list = quicksort([31, 18, 72, 79, 3, 18, 92, 11, 44, 56, 41, 28])
 print(sort_list)
+'''
+
+def FiboSequence(num):
+    if num <=0: #to make sure that we start the sequence with a positive number and not a 0 or a negative one
+        print("Please put in a number greater than 0...")
+    elif num == 1:          #these first two elif statements are for the unique cases in the fibonnachi sequence since the first 2 numbers are 1 and 1
+        return [1]
+    elif num == 2:
+        return [1, 1]
+    else:                   #the actual code for the sequence
+        fib_list = [1, 1]
+        for i in range(2, num):
+            fib_list.append(fib_list[i-1] + fib_list[i-2])
+        return fib_list
+
+print(FiboSequence(30))
 
