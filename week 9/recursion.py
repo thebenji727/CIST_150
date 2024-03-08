@@ -35,6 +35,11 @@ test2(3)
 
 
 
+
+
+
+##### Factorial program
+
 # write program to find factorial of number
 # ex = 5! = 5*4*3*2*1 = 120
 
@@ -50,6 +55,13 @@ def factorialnum(n):
 fact_val = factorialnum(5)
 print(fact_val)
 
+
+
+
+
+
+
+###### QuickSort
 import statistics
 
 def quicksort(num_list):
@@ -73,8 +85,12 @@ def quicksort(num_list):
 
 sort_list = quicksort([31, 18, 72, 79, 3, 18, 92, 11, 44, 56, 41, 28])
 print(sort_list)
-'''
 
+
+
+
+
+#### Fibonacci sequence
 def FiboSequence(num):
     if num <=0: #to make sure that we start the sequence with a positive number and not a 0 or a negative one
         print("Please put in a number greater than 0...")
@@ -90,3 +106,4 @@ def FiboSequence(num):
 
 print(FiboSequence(30))
 
+'''
